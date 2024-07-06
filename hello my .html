@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with tutorial </title>
+    <link rel="stylesheet" href="hello myt .css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/conflict-detection.min.js"
+        integrity="sha512-e3I3QsLqsuuhMnI0KneOCY3EIIhd55WU/7+hndOQayW2Fur2mdKAhbIEuEFCS/Npx83lqB0XhWzcjJXYIY5a3w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Picture2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Muskan</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/about-me.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a student who has completed both 10th and 12th grade. I have a strong interest in web
+                        development and have recently learned Python. In addition to Python, I am currently learning
+                        other skills related to web development to broaden my knowledge and enhance my capabilities in
+                        this field.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links actice-link" onclick="opentab('Skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web_Development</span><br>Designing Web</li>
+                            <li><span>Machine learning</span><br>Learn Python </li>
+                            <li><span>Bachelor </span><br>Fresher</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Web-dev</span><br>Html,Css,JS</li>
+                            <li><span>Programming-Language </span><br>Python </li>
+                            <li><span>ADCA Course</span><br>-</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>Matriculation</li>
+                            <li><span>2024 </span><br>Intermediate </li>
+                            <li><span>2024-current </span><br>Bachelor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------services------------- -->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="Services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor itaque magnam eaque
+                        esse ratione tenetur natus minus recusandae odit eveniet iste debitis quas alias, accusamus quis
+                        at, atque voluptatibus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Machine learning</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor itaque magnam eaque
+                        esse ratione tenetur natus minus recusandae odit eveniet iste debitis quas alias, accusamus quis
+                        at, atque voluptatibus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+
+                    <h2>MS Office</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor itaque magnam eaque
+                        esse ratione tenetur natus minus recusandae odit eveniet iste debitis quas alias, accusamus quis
+                        at, atque voluptatibus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------portfolio------------- -->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/work-1.png" alt="Description of Social Media App">
+                    <div class="layer">
+                        <h3>Tic-tac Game</h3>
+                        <p>Challenge yourself and have fun with our exciting Tic-Tac-Toe game! Play now!
+                            Store.</p>
+                        <a href="http://127.0.0.1:5502/tic%20tac.html" target="_blank"> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/work-2.png" alt="Description of Music App">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>Discover and enjoy your favorite tunes effortlessly with our sleek, user-friendly music
+                            player!</p>
+                        <a href="http://127.0.0.1:5500/spotify_clone.html" target="_blank"> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/work-3.png" alt="Description of Online Shopping App">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Explore our online shopping website for amazing deals and a seamless shopping experience!.
+                        </p>
+                        <a href="http://127.0.0.1:5503/project2.html" target="_blank"> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Muskan1Kumari4draw" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------contact----------- -->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@example.com </p>
+                    <p> <i class="fa-solid fa-square-phone"></i>012345789</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/muskan-gupta-739a532ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+
+ target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://in.pinterest.com/drawphilic/" target="_blank"><i class="fa-brands fa-pinterest-square"></i></a>
+                        <a href="https://www.youtube.com/@drawphilic-" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://github.com/Muskan1Kumari4draw" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/drawphilic_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright &copy; Muskan.Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("actice-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("actice-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwK-usFuP-YtExa74IRjdr9psXrgacKLUkdLlfSNttF5Qa_dboJVaHKy1YQsV_ROcBrBg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfuly"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    </script>
+</body>
+
+</html>
